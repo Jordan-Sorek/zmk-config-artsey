@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 500  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 15    // default: 10
 
 #include <dt-bindings/zmk/pointing.h>
 
@@ -138,13 +138,13 @@
 #define TIMEOUT_COMBO_3 175
 #endif
 #if !defined TIMEOUT_COMBO_MOUSE
-#define TIMEOUT_COMBO_MOUSE 75
+#define TIMEOUT_COMBO_MOUSE 50
 #endif
 #if !defined TIMEOUT_COMBO_4
 #define TIMEOUT_COMBO_4 175
 #endif
 #if !defined TIMEOUT_COMBO_8
-#define TIMEOUT_COMBO_8 275
+#define TIMEOUT_COMBO_8 350
 #endif
 #if !defined TIMEOUT_LAYER_HOLD
 #define TIMEOUT_LAYER_HOLD 200
