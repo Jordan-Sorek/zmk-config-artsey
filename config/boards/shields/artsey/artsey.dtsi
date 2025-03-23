@@ -13,6 +13,13 @@
 
 #include <dt-bindings/zmk/pointing.h>
 
+&mmv {
+    x-input-code = <INPUT_REL_X>;
+    y-input-code = <INPUT_REL_Y>;
+    time-to-max-speed-ms = <0>;
+    acceleration-exponent = <0>;
+};
+
 /*****************************************
  * Macros for filling in "&none" in the right places in the keymap for re-use needs
  *****************************************/
