@@ -126,6 +126,9 @@
 #if !defined TIMEOUT_COMBO_4
 #define TIMEOUT_COMBO_4 175
 #endif
+#if !defined TIMEOUT_COMBO_8
+#define TIMEOUT_COMBO_8 175
+#endif
 #if !defined TIMEOUT_LAYER_HOLD
 #define TIMEOUT_LAYER_HOLD 200
 #endif
@@ -278,7 +281,7 @@
 		/*****************************************
 		 * 8 key reset
 		 *****************************************/
-		combo_reset          { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_R KEY_T KEY_S KEY_E KEY_Y KEY_I KEY_O>; bindings = <&sys_reset>; };
+		combo_reset          { timeout-ms = <TIMEOUT_COMBO_8>; key-positions = <KEY_A KEY_R KEY_T KEY_S KEY_E KEY_Y KEY_I KEY_O>; bindings = <&sys_reset>; };
 	};
 };
 
