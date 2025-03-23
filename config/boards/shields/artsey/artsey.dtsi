@@ -8,6 +8,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+
+#include <dt-bindings/zmk/pointing.h>
+
 /*****************************************
  * Macros for filling in "&none" in the right places in the keymap for re-use needs
  *****************************************/
@@ -157,6 +162,23 @@
 
 #endif
 
+#if !defined ARTSEY_LAYER_MOUSE
+#if defined ARTSEY_RIGHT
+#define ARTSEY_LAYER_MOUSE                                            \
+		mouse {                                                       \
+			label = "Mouse";                                          \
+			bindings = <                                               \
+				LEADING_NONES                                          \
+				&mkp LCLK &mmv MOVE_UP  &mkp RCLK  &msc SCRL_UP              \
+				MIDDLE_NONES                                           \
+				&mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc SCRL_DOWN \
+				TRAILING_NONES                                         \
+			>;                                                         \
+		};
+#endif
+
+#endif
+
 /*****************************************
  * Define base layer chars for 'standard ARTSEY' or 'COLEMAK' inspired (you can add more by following the pattern below)
  * Turn on the ARTSEY_COLEMAK definition above if you want this change
@@ -181,8 +203,10 @@
 #define LAYER_ID_SYMBOLS 2
 #define LAYER_ID_PARENTHETICALS 3
 #define LAYER_ID_NAVIGATION 4
-#define LAYER_ID_BT_SEL 5
-#define LAYER_ID_CUSTOM 6
+#define LAYER_ID_MOUSE 5
+#define LAYER_ID_BT_SEL 6
+#define LAYER_ID_CUSTOM 7
+
 
 /*****************************************
  * Standard ARTSEY combo definitions
@@ -337,6 +361,7 @@
 				TRAILING_NONES
 			>;
 		};
+		ARTSEY_LAYER_MOUSE;
 		bt {
 			label = "BT";
 			bindings = <
@@ -347,7 +372,7 @@
 				TRAILING_NONES
 			>;
 		};
-		ARTSEY_LAYER_CUSTOM 
+		ARTSEY_LAYER_CUSTOM; 
 	};
 };
 #endif
