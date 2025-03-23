@@ -362,7 +362,7 @@
 				TRAILING_NONES
 			>;
 		};
-		ARTSEY_LAYER_MOUSE;
+		ARTSEY_LAYER_MOUSE
 		bt {
 			label = "BT";
 			bindings = <
@@ -373,7 +373,7 @@
 				TRAILING_NONES
 			>;
 		};
-		ARTSEY_LAYER_CUSTOM; 
+		ARTSEY_LAYER_CUSTOM 
 	};
 };
 #endif
