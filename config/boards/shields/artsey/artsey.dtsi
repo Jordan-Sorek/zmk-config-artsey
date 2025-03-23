@@ -165,8 +165,12 @@
 #if !defined ARTSEY_LAYER_MOUSE
 #if defined ARTSEY_RIGHT
 #define ARTSEY_LAYER_MOUSE                                            \
-		mouse {                                                       \
-			label = "Mouse";                                          \
+		mouse {   
+			sensor-params {
+           			accel = <0>;    // Acceleration factor (increase for faster acceleration) \
+            			speed = <10>;   // Base movement speed (increase for faster movement)  \
+    			    };										\
+			label = "Mouse";                            			                \
 			bindings = <                                               \
 				LEADING_NONES                                          \
 				&mkp LCLK &mmv MOVE_UP  &mkp RCLK  &msc SCRL_UP              \
