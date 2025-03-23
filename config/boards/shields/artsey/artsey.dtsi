@@ -341,9 +341,9 @@
 			label = "BT";
 			bindings = <
 				LEADING_NONES
-				&out &bt BT_SEL 0 &bt BT_SEL 1 ARTSEY_BT_TOP
+				&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 ARTSEY_BT_TOP
 				MIDDLE_NONES
-				&bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 ARTSEY_BT_BOTTOM
+				&bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5 ARTSEY_BT_BOTTOM
 				TRAILING_NONES
 			>;
 		};
