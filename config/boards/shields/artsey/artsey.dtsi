@@ -272,8 +272,8 @@
 		combo_tab             { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_R KEY_T KEY_O>; bindings = <&kp TAB>; };
 		combo_space           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_E KEY_Y KEY_I KEY_O>; bindings = <&kp SPACE>; };
 		combo_shift           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_E KEY_R KEY_T KEY_S>; bindings = <&sk LSHFT>; };
-		combo_layer_bt_select { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_E KEY_S KEY_O>; bindings = <&tog LAYER_ID_BT_SEL>; };
-		combo_bt_clr          { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_R KEY_Y KEY_T KEY_I>; bindings = <&bt BT_CLR>; };
+		combo_layer_bt_select { layers = <LAYER_ID_BASE LAYER_ID_BT_SEL>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_E KEY_S KEY_O>; bindings = <&tog LAYER_ID_BT_SEL>; };
+		combo_bt_clr          { layers = <LAYER_ID_BT_SEL>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_R KEY_Y KEY_T KEY_I>; bindings = <&bt BT_CLR_ALL>; };
 
 		combo_z         { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_R KEY_T KEY_S>; bindings = <&kp Z>; };
 		combo_caps_lock { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_O KEY_I KEY_Y KEY_A>; bindings = <&kp CAPS>; };
@@ -375,9 +375,9 @@
 			label = "BT";
 			bindings = <
 				LEADING_NONES
-				&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 ARTSEY_BT_TOP
+				&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &out OUT_USB
 				MIDDLE_NONES
-				&bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5 ARTSEY_BT_BOTTOM
+				&bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5 &out OUT_BLE
 				TRAILING_NONES
 			>;
 		};
