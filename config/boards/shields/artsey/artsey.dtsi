@@ -132,19 +132,19 @@
  *    https://github.com/zmkfirmware/zmk/issues/905
  *****************************************/
 #if !defined TIMEOUT_COMBO_2
-#define TIMEOUT_COMBO_2 175
+#define TIMEOUT_COMBO_2 300
 #endif
 #if !defined TIMEOUT_COMBO_3
-#define TIMEOUT_COMBO_3 175
+#define TIMEOUT_COMBO_3 300
 #endif
 #if !defined TIMEOUT_COMBO_MOUSE
 #define TIMEOUT_COMBO_MOUSE 50
 #endif
 #if !defined TIMEOUT_COMBO_4
-#define TIMEOUT_COMBO_4 175
+#define TIMEOUT_COMBO_4 300
 #endif
 #if !defined TIMEOUT_COMBO_8
-#define TIMEOUT_COMBO_8 350
+#define TIMEOUT_COMBO_8 300
 #endif
 #if !defined TIMEOUT_LAYER_HOLD
 #define TIMEOUT_LAYER_HOLD 200
