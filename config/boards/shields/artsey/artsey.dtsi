@@ -132,19 +132,19 @@
  *    https://github.com/zmkfirmware/zmk/issues/905
  *****************************************/
 #if !defined TIMEOUT_COMBO_2
-#define TIMEOUT_COMBO_2 300
+#define TIMEOUT_COMBO_2 175
 #endif
 #if !defined TIMEOUT_COMBO_3
-#define TIMEOUT_COMBO_3 300
+#define TIMEOUT_COMBO_3 175
 #endif
 #if !defined TIMEOUT_COMBO_MOUSE
-#define TIMEOUT_COMBO_MOUSE 50
+#define TIMEOUT_COMBO_MOUSE 75
 #endif
 #if !defined TIMEOUT_COMBO_4
-#define TIMEOUT_COMBO_4 300
+#define TIMEOUT_COMBO_4 175
 #endif
 #if !defined TIMEOUT_COMBO_8
-#define TIMEOUT_COMBO_8 300
+#define TIMEOUT_COMBO_8 175
 #endif
 #if !defined TIMEOUT_LAYER_HOLD
 #define TIMEOUT_LAYER_HOLD 200
@@ -252,7 +252,7 @@
 		combo_c           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_Y>; bindings = <&kp C>; };
 		combo_n           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_O>; bindings = <&kp ARTSEY_COMBO_N>; };
 		combo_f           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_R>; bindings = <&kp F>; };
-		combo_b           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_T>; bindings = <&kp F>; };
+		combo_b           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_T>; bindings = <&kp B>; };
 		combo_g           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_T>; bindings = <&kp G>; };
 		combo_u           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_I>; bindings = <&kp U>; };
 		combo_h           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_I>; bindings = <&kp H>; };
