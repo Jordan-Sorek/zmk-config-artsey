@@ -16,7 +16,7 @@
 &mmv {
     x-input-code = <INPUT_REL_X>;
     y-input-code = <INPUT_REL_Y>;
-    time-to-max-speed-ms = <0>;
+    time-to-max-speed-ms = <500>;
     acceleration-exponent = <0>;
 };
 
@@ -276,7 +276,7 @@
 		 *****************************************/
 		combo_esc              { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_O>; bindings = <&kp ESC>; };
 		combo_layer_navigation { layers = <LAYER_ID_BASE LAYER_ID_NAVIGATION>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_E KEY_I>; bindings = <&tog LAYER_ID_NAVIGATION>; };
-		combo_layer_mouse { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = < KEY_Y>; bindings = <&tog LAYER_ID_MOUSE>; };
+		combo_layer_mouse { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_T KEY_Y>; bindings = <&tog LAYER_ID_MOUSE>; };
 		combo_layer_mouse_exit { layers = <LAYER_ID_MOUSE>; timeout-ms = <TIMEOUT_COMBO_MOUSE>; key-positions = <KEY_S KEY_O>; bindings = <&tog LAYER_ID_MOUSE>; };
 
 		combo_m            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_Y KEY_I KEY_O>; bindings = <&kp M>; };
