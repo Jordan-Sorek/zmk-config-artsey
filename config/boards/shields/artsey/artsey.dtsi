@@ -16,14 +16,14 @@
 &mmv {
     x-input-code = <INPUT_REL_X>;
     y-input-code = <INPUT_REL_Y>;
-    time-to-max-speed-ms = <500>;
+    time-to-max-speed-ms = <800>;
     acceleration-exponent = <0>;
 };
 
 &msc {
     x-input-code = <INPUT_REL_HWHEEL>;
     y-input-code = <INPUT_REL_WHEEL>;
-    time-to-max-speed-ms = <0>;
+    time-to-max-speed-ms = <200>;
     acceleration-exponent = <0>;
 };
 
@@ -247,6 +247,11 @@
 		combo_delete     { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_R>; bindings = <&kp DELETE>; };
 		// combo_shift_lock { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kt LSHFT>; };
 		// combo_mmb      { layers = <LAYER_ID_MOUSE>; timeout-ms = <TIMEOUT_COMBO_MOUSE>; key-positions = <KEY_S KEY_O>; bindings = <&mkp MB3>; };
+
+		combo_upright     { layers = <LAYER_ID_MOUSE>; timeout-ms = <TIMEOUT_COMBO_MOUSE>; key-positions = <KEY_R KEY_I>; bindings = <&mmv MOVE_XY(424, -424)>; };
+		combo_upleft      { layers = <LAYER_ID_MOUSE>; timeout-ms = <TIMEOUT_COMBO_MOUSE>; key-positions = <KEY_R KEY_E>; bindings = <&mmv MOVE_XY(-424, -424)>; };
+		combo_downright   { layers = <LAYER_ID_MOUSE>; timeout-ms = <TIMEOUT_COMBO_MOUSE>; key-positions = <KEY_Y KEY_I>; bindings = <&mmv MOVE_XY(424, 424)>; };
+		combo_downleft    { layers = <LAYER_ID_MOUSE>; timeout-ms = <TIMEOUT_COMBO_MOUSE>; key-positions = <KEY_Y KEY_E>; bindings = <&mmv MOVE_XY(-424, 424)>; };
 
 		combo_space2      { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_O>; bindings = <&kp SPACE>; };
 		combo_c           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_Y>; bindings = <&kp C>; };
