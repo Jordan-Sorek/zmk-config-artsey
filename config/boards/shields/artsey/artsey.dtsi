@@ -211,7 +211,7 @@
 #define ARTSEY_BASE_Y Y
 #define ARTSEY_BASE_I I
 #define ARTSEY_BASE_O O
-#define ARTSEY_COMBO_N N
+//#define ARTSEY_COMBO_N N
 
 /*****************************************
  * Layer IDs used by the ARTSEY keymap
@@ -251,11 +251,11 @@
 		//combo_upright     { layers = <LAYER_ID_MOUSE>; timeout-ms = <TIMEOUT_COMBO_MOUSE>; key-positions = <KEY_R KEY_I>; bindings = <&mmv MOVE_XY(424, -424)>; };
 		//combo_upleft      { layers = <LAYER_ID_MOUSE>; timeout-ms = <TIMEOUT_COMBO_MOUSE>; key-positions = <KEY_R KEY_E>; bindings = <&mmv MOVE_XY(-424, -424)>; };
 		//combo_downright   { layers = <LAYER_ID_MOUSE>; timeout-ms = <TIMEOUT_COMBO_MOUSE>; key-positions = <KEY_Y KEY_I>; bindings = <&mmv MOVE_XY(424, 424)>; };
-		combo_downleft    { layers = <LAYER_ID_MOUSE>; timeout-ms = <TIMEOUT_COMBO_MOUSE>; key-positions = <KEY_Y KEY_E>; bindings = <&mmv MOVE_XY(-424, 424)>; };
+		//combo_downleft    { layers = <LAYER_ID_MOUSE>; timeout-ms = <TIMEOUT_COMBO_MOUSE>; key-positions = <KEY_Y KEY_E>; bindings = <&mmv MOVE_XY(-424, 424)>; };
 
 		combo_space2      { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_O>; bindings = <&kp SPACE>; };
 		combo_c           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_Y>; bindings = <&kp C>; };
-		combo_n           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_O>; bindings = <&kp ARTSEY_COMBO_N>; };
+		combo_n           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_O>; bindings = <&kp N>; };
 		combo_f           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_R>; bindings = <&kp F>; };
 		combo_b           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_T>; bindings = <&kp B>; };
 		combo_g           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_T>; bindings = <&kp G>; };
@@ -281,7 +281,7 @@
 		 *****************************************/
 		combo_esc              { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_O>; bindings = <&kp ESC>; };
 		combo_layer_navigation { layers = <LAYER_ID_BASE LAYER_ID_NAVIGATION>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_E KEY_I>; bindings = <&tog LAYER_ID_NAVIGATION>; };
-		combo_layer_mouse { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_T KEY_Y>; bindings = <&tog LAYER_ID_MOUSE>; };
+		combo_layer_mouse { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_S KEY_O>; bindings = <&tog LAYER_ID_MOUSE>; };
 		combo_layer_mouse_exit { layers = <LAYER_ID_MOUSE>; timeout-ms = <TIMEOUT_COMBO_MOUSE>; key-positions = <KEY_S KEY_O>; bindings = <&tog LAYER_ID_MOUSE>; };
 
 		combo_m            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_Y KEY_I KEY_O>; bindings = <&kp M>; };
