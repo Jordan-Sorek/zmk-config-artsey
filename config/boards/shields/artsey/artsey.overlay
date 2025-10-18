@@ -25,7 +25,7 @@
 	};
 };
 
-&pro_micro_i2c {
+&i2c_40003000 {
 	status = "okay";
 	
 
