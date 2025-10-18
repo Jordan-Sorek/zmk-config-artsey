@@ -27,7 +27,8 @@
 
 &i2c1 {
 	status = "okay";
-	
+	pinctrl-names = "default";
+    pinctrl-0 = <&i2c1_default>;
 
 	oled: ssd1306@3c {
 		compatible = "solomon,ssd1306fb-i2c";
@@ -47,3 +48,16 @@
 		status = "okay";
 	};
 };
+
+fragment@3 {
+    target = <&pinctrl>;
+    __overlay__ {
+        i2c1_default: i2c1_default {
+            group1 {
+                psels = <NRF_PSEL(TWIM_SDA, 1, 26)>,   // Adjust pin numbers per your hardware
+                        <NRF_PSEL(TWIM_SCL, 1, 27)>;
+                bias-pull-up;
+            };
+        };
+    };
+}
